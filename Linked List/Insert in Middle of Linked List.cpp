@@ -106,7 +106,7 @@ Node* insertInMiddle(Node* head, int x)
 {   
     Node *tmp = new Node(x);
     if (head == NULL) {
-        return tmp;;
+        return tmp;
     }
     Node *slow = head;
     Node *fast = head;
