@@ -244,7 +244,7 @@ bool IsFoldable(Node* root)
         vector <int> t2 = inOrder(root->left);
         
         vector <int> t3 = preorder(mirror1(root->right));
-        vector <int> t4 = inOrder(mirror1(root->right));
+        vector <int> t4 = inOrder(root->right);
         
         if(same(t1,t3) && same(t2,t4)) {
             return true;
